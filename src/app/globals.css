@@ -16,14 +16,14 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.invisible-scroll {
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+/* For Webkit browsers like Chrome and Safari */
+.invisible-scroll ::-webkit-scrollbar {
+  display: none;
 }
 
 @layer utilities {
